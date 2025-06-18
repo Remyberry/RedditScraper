@@ -2,10 +2,10 @@ import praw
 import csv
 from tqdm import tqdm
 
-csv_file_path = "C:/Users/DICT/Desktop/BrandCommentAnalysis/CSVResults/RedditScraperResults.csv"
-text_file_path = "C:/Users/DICT/Desktop/BrandCommentAnalysis/TXTResults/scrapedText.txt"
-reddit = praw.Reddit(user_agent=True, client_id="mJQZkgxNUcvHsYwVDr23dQ", client_secret="zzUYSxZEcoo19vQqDE5-nO2CzDkO2g", username='Remyrraj',
-                    password='Santos016', ratelimit_seconds=300)
+csv_file_path = "BrandCommentAnalysis/CSVResults/RedditScraperResults.csv"
+text_file_path = "BrandCommentAnalysis/TXTResults/scrapedText.txt"
+reddit = praw.Reddit(user_agent=True, client_id="CLIENT ID", client_secret="API KEY", username='USERNAME',
+                    password='PASSWORD', ratelimit_seconds=300)
 
 scrapedData = []
 
