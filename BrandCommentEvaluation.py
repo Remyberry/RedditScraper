@@ -21,8 +21,8 @@ shoe_brands = ["Nike", "Adidas", "Reebok", "Puma", "New Balance", "Asics", "Conv
 brand_sentiments = {brand: {"positive": 0, "negative": 0, "neutral": 0} for brand in shoe_brands}
 brand_mentions = Counter()
 
-text_file_path = "C:/Users/DICT/Desktop/BrandCommentAnalysis/TXTResults/scrapedText.txt"
-csv_file_path = "C:/Users/DICT/Desktop/BrandCommentAnalysis/brand_sentiment_analysis.csv" 
+text_file_path = "BrandCommentAnalysis/TXTResults/scrapedText.txt"
+csv_file_path = "BrandCommentAnalysis/brand_sentiment_analysis.csv" 
 
 
 def analyze_text_file(file_path, csv_file_path):
