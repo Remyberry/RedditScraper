@@ -6,14 +6,14 @@ from tkinter import ttk
 from tqdm import tqdm
 
 
-csv_file_path = "C:/Users/DICT/Desktop/BrandCommentAnalysis/CSVResults/RedditScraperResults.csv"
-text_file_path = "C:/Users/DICT/Desktop/BrandCommentAnalysis/TXTResults/scrapedText.txt"
+csv_file_path = "BrandCommentAnalysis/CSVResults/RedditScraperResults.csv"
+text_file_path = "BrandCommentAnalysis/TXTResults/scrapedText.txt"
 
 reddit = praw.Reddit(user_agent=True,
-                     client_id="mJQZkgxNUcvHsYwVDr23dQ",
-                     client_secret="zzUYSxZEcoo19vQqDE5-nO2CzDkO2g",
-                     username='Remyrraj',
-                     password='Santos016',
+                     client_id="CLIENT ID",
+                     client_secret="CLIENT SECRET",
+                     username='USER NAME',
+                     password='PASSWORD',
                      ratelimit_seconds=300)
 
 print(f"Logged in as {reddit.user.me()}")
