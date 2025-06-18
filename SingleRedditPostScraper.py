@@ -2,14 +2,14 @@ import praw
 import csv
 from tqdm import tqdm
 
-csv_file_path = "C:/Users/DICT/Desktop/BrandCommentAnalysis/CSVResults/RedditScraperResults.csv"
-text_file_path = "C:/Users/DICT/Desktop/BrandCommentAnalysis/TXTResults/scrapedText.txt"
+csv_file_path = "BrandCommentAnalysis/CSVResults/RedditScraperResults.csv"
+text_file_path = "BrandCommentAnalysis/TXTResults/scrapedText.txt"
 
-reddit = praw.Reddit(user_agent=True, client_id="mJQZkgxNUcvHsYwVDr23dQ", client_secret="zzUYSxZEcoo19vQqDE5-nO2CzDkO2g", username='Remyrraj',
-                    password='Santos016', ratelimit_seconds=300)
+reddit = praw.Reddit(user_agent=True, client_id="CLIENT ID", client_secret="API KEY", username='USERNAME',
+                    password='PASSWORD', ratelimit_seconds=300)
 
-url="https://www.reddit.com/r/AskReddit/comments/vt6nn/reddit_most_of_us_are_cheap_and_willing_to_go/"
-submission = reddit.submission("vt6nn")
+url="https://www.reddit.com/r/AskReddit/comments/vt6nn/reddit_most_of_us_are_cheap_and_willing_to_go/"  #Sample site
+submission = reddit.submission("vt6nn") #Redit post ID in URL
 print(submission.title)
 print(submission.selftext)
 print("Reading all commetns...")
