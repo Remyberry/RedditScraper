@@ -1,0 +1,6 @@
+praw
+nltk
+numpy
+pandas
+matplotlib
+tqdm
